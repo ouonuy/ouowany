@@ -15,11 +15,10 @@
   border-radius: var(--r-pill);
   font-size: 13px;
   color: var(--c-sub);
-  border: 1px solid var(--c-border-m);
   background: transparent;
   transition: all var(--dur) var(--ease);
 }
-.scope-tab.active { background: var(--c-accent); color: #fff; border-color: var(--c-accent); }
+.scope-tab.active { background: var(--c-accent); color: #fff; }
 
 /* 书列表 */
 .lb-list {
@@ -35,13 +34,12 @@
 
 /* 书卡片 */
 .lb-card {
-  background: var(--c-bg);
-  border-radius: var(--r-md);
+  background: var(--c-surface);
+  border-radius: 14px;
   padding: 14px 16px;
   display: flex;
   align-items: center;
   gap: 12px;
-  box-shadow: var(--shadow-sm);
   cursor: pointer;
   transition: transform var(--dur);
 }
@@ -76,13 +74,12 @@
 
 /* 条目卡片 */
 .entry-card {
-  background: var(--c-bg);
-  border-radius: var(--r-md);
+  background: var(--c-surface);
+  border-radius: 14px;
   padding: 12px 14px;
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  box-shadow: var(--shadow-sm);
 }
 
 .entry-card-main { flex: 1; min-width: 0; }

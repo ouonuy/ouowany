@@ -94,7 +94,6 @@
   border-radius: var(--r-md);
   overflow: hidden;
   border: 1px solid var(--c-border);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.025);
 }
 .section-title {
   padding: 12px 16px 4px;
@@ -264,13 +263,12 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background var(--dur) var(--ease), color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
   font-family: var(--font);
 }
 .api-tab.active {
   background: var(--c-bg);
   color: var(--c-text);
-  box-shadow: 0 3px 12px rgba(0,0,0,.08);
 }
 
 /* ===== API Tab内容区 ===== */
@@ -307,7 +305,6 @@
   -webkit-user-select: none;
   transition: opacity 0.16s var(--ease), transform 0.16s var(--ease);
   will-change: left, top, transform;
-  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.18));
 }
 .global-floating-ball:hover,
 .global-floating-ball:focus-visible,
@@ -347,7 +344,6 @@
   background: var(--c-bg);
   background: color-mix(in srgb, var(--c-bg) 94%, transparent);
   color: var(--c-text);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
@@ -502,7 +498,6 @@
   border-radius: 18px;
   background: var(--c-bg, #fff);
   color: var(--c-text, #222);
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
 }
 .api-console-header {
   display: flex;

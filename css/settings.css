@@ -93,7 +93,6 @@
   background: var(--c-bg);
   border-radius: var(--r-md);
   overflow: hidden;
-  border: 1px solid var(--c-border);
 }
 .section-title {
   padding: 12px 16px 4px;
@@ -339,7 +338,6 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
-  border: 1px solid var(--c-border-m);
   border-radius: 16px;
   background: var(--c-bg);
   background: color-mix(in srgb, var(--c-bg) 94%, transparent);
@@ -401,7 +399,7 @@
 .floating-ball-context-divider {
   height: 1px;
   margin: 10px 0;
-  background: var(--c-border-m);
+  background: transparent;
 }
 .floating-ball-preset-list {
   min-height: 0;
@@ -448,7 +446,6 @@
 .floating-ball-popup-actions {
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 1px solid var(--c-border-m);
 }
 .floating-ball-config-link {
   text-align: center;
@@ -505,7 +502,7 @@
   justify-content: space-between;
   gap: 12px;
   padding: 16px 16px 12px;
-  border-bottom: 1px solid var(--c-line, #ececec);
+  border-bottom: none;
 }
 .api-console-title { font-size: 17px; font-weight: 700; }
 .api-console-subtitle { margin-top: 3px; color: var(--c-hint, #999); font-size: 11px; }
@@ -541,7 +538,6 @@
 .api-console-record {
   margin-bottom: 10px;
   overflow: hidden;
-  border: 1px solid var(--c-line, #e8e8e8);
   border-radius: 12px;
   background: var(--c-bg, #fff);
 }
@@ -579,7 +575,7 @@
 .api-console-time { color: var(--c-hint, #999); font-size: 11px; }
 .api-console-record-body {
   padding: 0 12px 12px;
-  border-top: 1px solid var(--c-line, #ececec);
+  border-top: none;
 }
 .api-console-meta-grid {
   display: grid;
@@ -629,7 +625,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-  border-top: 1px solid var(--c-line, #ececec);
+  border-top: none;
 }
 .api-console-actions button { width: 100%; }
 
@@ -676,7 +672,7 @@ textarea.input-field.floating-ball-css-input {
   min-height: 180px;
   padding: 12px;
   resize: vertical;
-  border: 1px solid var(--c-border-m);
+  border: none;
   border-radius: 10px;
   background: var(--c-surface);
   color: var(--c-text);
@@ -746,7 +742,7 @@ textarea.input-field.floating-ball-css-input {
   align-items: center;
   gap: 12px;
   padding: 10px 12px;
-  border: 1px solid var(--c-border-m);
+  border: none;
   border-radius: var(--r-sm);
   color: var(--c-text);
   background: var(--c-surface);
@@ -865,7 +861,7 @@ textarea.input-field.floating-ball-css-input {
   max-height: min(52vh, 430px);
   margin: 4px 16px 2px;
   overflow-y: auto;
-  border: 1px solid var(--c-border);
+  border: none;
   border-radius: 14px;
 }
 .app-data-choice {
@@ -897,13 +893,12 @@ textarea.input-field.floating-ball-css-input {
   height: 22px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--c-border);
+  border: none;
   border-radius: 50%;
   color: transparent;
   font-size: 11px;
 }
 .app-data-choice input:checked ~ .app-data-check {
-  border-color: var(--c-red);
   background: var(--c-red);
   color: #fff;
 }

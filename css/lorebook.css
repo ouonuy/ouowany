@@ -119,10 +119,9 @@
   flex-shrink: 0;
 }
 
-/* 条目编辑表单 / 新建条目区域 */
+/* 条目编辑表单 / 新建条目区域（彻底清除所有子项边框与圆角） */
 .entry-edit-form {
-  background: var(--c-surface);
-  border-radius: 14px;
+  background: var(--c-bg);
   padding: 12px 16px;
   display: flex;
   flex-direction: column;
@@ -131,13 +130,39 @@
   box-shadow: none;
 }
 
+/* 新建/编辑页面中的区块卡片、输入框、选择框统一变更为14px圆角且无描边 */
+.entry-edit-form > div,
+.entry-edit-form section,
+.entry-edit-form .memory-card,
+.entry-edit-form input,
+.entry-edit-form select,
+.entry-edit-form textarea {
+  border-radius: 14px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 针对截图里呈现的白色大圆角卡片区块容器 */
+.entry-edit-form > div {
+  background: var(--c-surface);
+  padding: 12px;
+}
+
+/* 内部小输入框和按钮的圆角统一 */
+.entry-edit-form input[type="text"],
+.entry-edit-form select,
+.entry-edit-form textarea {
+  background: var(--c-surface-2);
+  padding: 10px 12px;
+  color: var(--c-text);
+  font-family: var(--font);
+}
+
 .kw-input-wrap { display: flex; flex-direction: column; gap: 6px; }
 .kw-tags-area { display: flex; flex-wrap: wrap; gap: 4px; min-height: 24px; }
 
 .entry-content { 
   min-height: 120px; 
-  border-radius: 14px;
-  border: none;
 }
 
 /* header输入框（书名编辑） */

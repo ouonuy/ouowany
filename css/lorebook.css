@@ -16,6 +16,7 @@
   font-size: 13px;
   color: var(--c-sub);
   background: transparent;
+  border: none;
   transition: all var(--dur) var(--ease);
 }
 .scope-tab.active { background: var(--c-accent); color: #fff; }
@@ -40,6 +41,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  border: none;
+  box-shadow: none;
   cursor: pointer;
   transition: transform var(--dur);
 }
@@ -80,6 +83,8 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  border: none;
+  box-shadow: none;
 }
 
 .entry-card-main { flex: 1; min-width: 0; }
@@ -114,18 +119,26 @@
   flex-shrink: 0;
 }
 
-/* 条目编辑表单 */
+/* 条目编辑表单 / 新建条目区域 */
 .entry-edit-form {
-  padding: 8px 16px;
+  background: var(--c-surface);
+  border-radius: 14px;
+  padding: 12px 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border: none;
+  box-shadow: none;
 }
 
 .kw-input-wrap { display: flex; flex-direction: column; gap: 6px; }
 .kw-tags-area { display: flex; flex-wrap: wrap; gap: 4px; min-height: 24px; }
 
-.entry-content { min-height: 120px; }
+.entry-content { 
+  min-height: 120px; 
+  border-radius: 14px;
+  border: none;
+}
 
 /* header输入框（书名编辑） */
 .header-title-input {
@@ -135,6 +148,8 @@
   font-size: 17px;
   font-weight: 500;
   min-width: 0;
+  border: none;
+  background: transparent;
 }
 
 /* 绑定角色栏 */

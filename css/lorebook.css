@@ -35,7 +35,7 @@
 
 /* 书卡片 */
 .lb-card {
-  background: var(--c-surface);
+  background: #ffffff;
   border-radius: 14px;
   padding: 14px 16px;
   display: flex;
@@ -77,7 +77,7 @@
 
 /* 条目卡片 */
 .entry-card {
-  background: var(--c-surface);
+  background: #ffffff;
   border-radius: 14px;
   padding: 12px 14px;
   display: flex;
@@ -142,9 +142,9 @@
   box-shadow: none !important;
 }
 
-/* 针对截图里呈现的白色大圆角卡片区块容器 */
+/* 针对截图里呈现的白色大圆角卡片区块容器改为纯白 */
 .entry-edit-form > div {
-  background: var(--c-surface);
+  background: #ffffff;
   padding: 12px;
 }
 

@@ -12,7 +12,7 @@
 
 .scope-tab {
   padding: 6px 16px;
-  border-radius: var(--r-pill);
+  border-radius: 14px;
   font-size: 13px;
   color: var(--c-sub);
   background: transparent;
@@ -30,10 +30,10 @@
   padding: 12px 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
-/* 书卡片 */
+/* 书卡片：调整为纯白、无阴影、无描边、14px圆角 */
 .lb-card {
   background: #ffffff;
   border-radius: 14px;
@@ -54,7 +54,7 @@
 
 .lb-scope-tag {
   padding: 2px 8px;
-  border-radius: var(--r-pill);
+  border-radius: 14px;
   font-size: 11px;
 }
 .tag-global   { background: #f5f5f5; color: #7a7a7a; }
@@ -72,10 +72,10 @@
   padding: 12px 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
-/* 条目卡片 */
+/* 条目卡片：纯白、无阴影、无描边、14px圆角 */
 .entry-card {
   background: #ffffff;
   border-radius: 14px;
@@ -94,7 +94,7 @@
 .kw-tag {
   padding: 2px 8px;
   background: var(--c-surface-2);
-  border-radius: var(--r-pill);
+  border-radius: 14px;
   font-size: 11px;
   color: var(--c-sub);
 }
@@ -119,7 +119,7 @@
   flex-shrink: 0;
 }
 
-/* 条目编辑表单 / 新建条目区域（彻底清除所有子项边框与圆角） */
+/* 条目编辑表单 / 新建条目区域 */
 .entry-edit-form {
   background: var(--c-bg);
   padding: 12px 16px;
@@ -130,7 +130,7 @@
   box-shadow: none;
 }
 
-/* 新建/编辑页面中的区块卡片、输入框、选择框统一变更为14px圆角且无描边 */
+/* 新建/编辑页面中的区块卡片、输入框、选择框等统一为14px圆角且无描边 */
 .entry-edit-form > div,
 .entry-edit-form section,
 .entry-edit-form .memory-card,
@@ -142,13 +142,13 @@
   box-shadow: none !important;
 }
 
-/* 针对截图里呈现的白色大圆角卡片区块容器改为纯白 */
+/* 表单内部大容器统一变更为纯白色 */
 .entry-edit-form > div {
   background: #ffffff;
   padding: 12px;
 }
 
-/* 内部小输入框和按钮的圆角统一 */
+/* 内部小输入框和按钮的圆角和背景 */
 .entry-edit-form input[type="text"],
 .entry-edit-form select,
 .entry-edit-form textarea {
